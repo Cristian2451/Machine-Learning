@@ -31,10 +31,10 @@ batch_size = 32
 train_generator = datagen.flow_from_dataframe(
     dataframe=my_df_train,
     directory=None,
-    x_col="fpath",  # Change this to the actual column containing image paths
-    y_col="AoA",  # Change this to the actual column containing labels
+    x_col="fpath", 
+    y_col="AoA", 
     target_size=img_size,
-    class_mode='categorical',  # Change this based on your task (e.g., 'binary' for binary classification)
+    class_mode='categorical', 
     batch_size=batch_size,
     subset='training'
 )
