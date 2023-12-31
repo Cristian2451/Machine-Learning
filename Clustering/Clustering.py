@@ -21,7 +21,7 @@ plt.plot(model.cluster_centers_[:,0],model.cluster_centers_[:,1],'wx', ms=4);
 plt.show()
 
 # Perform Elbow Method by plotting the average distance of points from centroids as a function of no. of clusters.
-# In this case, 3 clusters are optimal.
+# In this case, 15 clusters are optimal.
 Inertia_k = []
 for k in range(1,30):
     model = KMeans(n_clusters = k, n_init = 10, max_iter = 300).fit(points)
